@@ -74,5 +74,5 @@
 
   - Github.io Address : [Click Here](https://racheneken.github.io/Github.io-HTMLreport/)
   
-  - Netlify Address : [Click Here] ()
+  - Netlify Address : [Click Here](https://htmlreport.netlify.app/)
   
