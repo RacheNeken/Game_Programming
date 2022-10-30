@@ -1,6 +1,6 @@
 # HTML / CSS Report
 
-  > 목표 : Using 3 kinds of CSS FrameWork
+  > 목표 : HTML 문서에 3 종류의 CSS FrameWork를 적용시켜보자.
 
 -----------------------------------------------------------------------
 
