@@ -46,7 +46,8 @@
   
     <h3>음악</h3>
     <p></p>
-      <iframe width="100%" height="600" src="https://www.youtube.com/embed/7vedHzJu-H0" title="YouTube video player"
+      <iframe width="100%" height="600"
+        src="https://www.youtube.com/embed/7vedHzJu-H0" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
         gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
