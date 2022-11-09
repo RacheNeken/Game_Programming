@@ -37,5 +37,5 @@
 
   - Github.io Address : [Click Here](https://racheneken.github.io/Github.io-Chartreport/)
   
-  - Netlify Address : [Click Here](https://htmlreport.netlify.app/)
+  - Netlify Address : [Click Here](https://chartreport.netlify.app)
   
