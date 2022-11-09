@@ -16,10 +16,10 @@
   > Canvas
   
     <!-- Canvas -->
-     <div>
-         <canvas id="myChart2" style="display:inline-block; width:100%;
-             max-width:400px; height:100%; max-height:400px"></canvas>
-     </div>
+      <div>
+        <canvas id="myChart2" style="display:inline-block; width:100%; 
+                                     max-width:400px; height:100%; max-height:400px"></canvas>
+      </div>
 
   > Chart
   
