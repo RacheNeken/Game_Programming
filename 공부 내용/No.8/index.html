@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김준호의 이력서</title>
+    <!-- bootstrap FrameWork -->
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- materialize FrameWork -->
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- bulma FrameWork -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <!-- chart.js -->
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js></script>
+    <!-- css -->
+    <link rel="stylesheet"
+        href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- materialize truncation -->
+        <div class="valign-wrapper">
+            <h1 class="truncate , grey-text text-darken-2">김준호의 이력서</h1>
+        </div>
+        <p></p>
+        <!-- foundation menu -->
+        <section id="menu">
+            <b style="font-size:20px;" class="menu-text">Menu</b>
+            <ul class="menu align-right">
+                <li>
+                    <a href="#my_info">Info</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#skill">Skills</a>
+                </li>
+                <li>
+                    <a href="#project">Projects</a>
+                </li>
+            </ul>
+        </section>
+        <section id="my_info">
+            <h2>My info</h2>
+            <img src="images/profile.jpg" alt="홍길동의 얼굴 사진" />
+            <br><br><br>
+            <div class="infotable">
+                <table>
+                    <tbody>
+                        <tr id="myname">
+                            <th>이름</th>
+                            <td>김준호 // JunHo Kim</td>
+                        </tr>
+                        <tr>
+                            <th>직업</th>
+                            <td>대학생</td>
+                        </tr>
+                        <tr>
+                            <th>나이</th>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <th>거주지</th>
+                            <td>부산</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+            
+        <section id="about">
+            <h2>About</h2><hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat placerat tellus ut euismod. Integer dignissim molestie sem ut congue. Vestibulum aliquet nibh eget augue dapibus, molestie commodo eros sagittis. Donec interdum pretium rhoncus. Aenean lobortis erat ante, quis imperdiet sapien cursus ut. Sed pretium porttitor odio id tristique. Donec accumsan magna tellus, eget elementum felis eleifend a. Vivamus tempus leo sed turpis malesuada, et sodales justo sagittis. Cras pharetra nisl eros, in aliquet quam congue vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque pharetra mi ac tortor commodo, quis aliquet dui porta. Integer imperdiet accumsan dui eget imperdiet. Nulla cursus sed metus posuere fringilla. Sed et ante lectus.</p>   
+        </section>
+        
+        <section id="contact">
+            <!-- bootstrap list -->
+            <h2>Contact</h2><hr>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Tel</div>
+                        <div class="mobile">
+                            <a href="tel:0100000000">    010-000-0000</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">E-mail</div>
+                        <div class="email">
+                            <a href="mailto:mail@mail.com" target="_blank">    mail@Kyungsung.ac.kr</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">FaceBook</div>
+                        <div class="facebook">
+                            <a href="https://facebook.com/myfacebook" target="_blank">    https://facebook.com/myfacebook</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Blog</div>
+                        <div class="blog">
+                            <a href="https://naver.blog.com/myblog" target="_blank">    https://naver.blog.com/myblog</a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        
+        <section id="skill">
+            <h2>Skills</h2><hr>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Javascript</li>
+                <li>php</li>
+                <li>ruby</li>
+                <li>iOS</li>
+            </ol>
+            <div>
+                <canvas id="myChart1" style="width:100%;max-width:400px;height:100%;max-height:400px"></canvas>
+            </div>
+            <script>
+                var ctx = document.getElementById('myChart1');
+                var xValues = ['HTML','CSS','SASS','Javascript','php','ruby','iOS'];
+                var yValues = [30,30,10,20,10,5,5];
+                var barColor = ['#ff0000','#ff8c00','#ffff00','#008000','#0000ff','#4b0082','#800080'];
+                
+                new Chart("myChart1", 
+                {
+                    type : "polarArea" ,
+                    data : 
+                    {
+                        labels : xValues,
+                        datasets :
+                        [{
+                            backgroundColor : barColor,
+                            data : yValues
+                        }]
+                    },
+                    options :
+                    {
+                    }
+                });
+            </script>
+            <div>
+                <canvas id="myChart2" style="display:inline-block; width:100%; max-width:400px; height:100%; max-height:400px"></canvas>
+            </div>
+            <script>
+                var ctx = document.getElementById('myChart2');
+                var xValues = ['HTML','CSS','SASS','Javascript','php','ruby','iOS'];
+                var yValues = [3,2,1,2,1,3,1];
+                var barColor =
+                    [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(130, 130, 130, 0.2)'
+                    ];
+                var borderColor =
+                    [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(130, 130, 130, 1)'
+                    ];
+
+                new Chart("myChart2", 
+                {
+                    type : "bar" ,
+                    data : 
+                    {
+                        labels : xValues,
+                        datasets :
+                        [{
+                            label : "Personal History",
+                            backgroundColor : barColor,
+                            borderColor : borderColor,
+                            data : yValues,
+                            borderWidth : 1
+                        }]
+                    },
+                    options :
+                    {
+                    }
+                });
+            </script>
+            <div>
+                <canvas id="myChart3" style="width:100%;max-width:400px;height:100%;max-height:400px"></canvas>
+            </div>
+            <script>
+                var ctx = document.getElementById('myChart3');
+                var xValues = ['Korean','English','Japanese'];
+                var yValues = [5,4,2];
+                var barColor = ['#ff0000','#ff8c00','#ffff00','#008000','#0000ff','#4b0082','#800080'];
+                
+                new Chart("myChart3", 
+                {
+                    type : "pie" ,
+                    data : 
+                    {
+                        labels : xValues,
+                        datasets :
+                        [{
+                            backgroundColor : barColor,
+                            data : yValues
+                        }]
+                    },
+                    options :
+                    {
+                    }
+                });
+            </script>
+        </section>
+        
+        <section id="project">
+            <h2>Projects</h2><hr>
+            <ol>
+                <li>
+                    <h3>재밌는 영상</h3>
+                    <p></p>
+                    <video src="movie.mp4" controls></video>
+                    <br>
+                    <p>Integer imperdiet accumsan dui eget imperdiet. Nulla cursus sed metus posuere fringilla.</p>
+                    <a href="https://mysite.com" target="_blank">mysite.com</a>
+                </li>
+                <li>
+                    <p></p>
+                    <h3>음악</h3>
+                    <p></p>
+                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/7vedHzJu-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br>
+                    <p>Integer imperdiet accumsan dui eget imperdiet. Nulla cursus sed metus posuere fringilla.</p>
+                    <a href="https://mysite2.com" target="_blank">mysite2.com</a>
+                </li>
+            </ol>    
+        </section>
+    </div>
+</body>
+</html>
