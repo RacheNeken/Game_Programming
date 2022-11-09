@@ -31,6 +31,17 @@
           var barColor = ['#ff0000','#ff8c00','#ffff00','#008000','#0000ff','#4b0082','#800080'];
       ...
   
+  ## 사용된 Chart 내용
+  
+  > Polar Area Chart
+    - 능숙도
+  
+  > Bar Chart
+    - 경력
+  
+  > Doughtnut Chart
+    - 사용 가능 언어 및 
+  
 -----------------------------------------------------------------------
 
 ## Github.io & Netlify Address
