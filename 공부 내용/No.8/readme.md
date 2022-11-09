@@ -15,6 +15,7 @@
 
   > Canvas
   
+    <!-- Canvas -->
      <div>
          <canvas id="myChart2" style="display:inline-block; width:100%;
              max-width:400px; height:100%; max-height:400px"></canvas>
@@ -22,6 +23,7 @@
 
   > Chart
   
+     <!-- Chart -->
      <script>
          var ctx = document.getElementById('myChart1');
          var xValues = ['HTML','CSS','SASS','Javascript','php','ruby','iOS'];
