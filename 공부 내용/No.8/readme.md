@@ -24,11 +24,11 @@
   > Chart
   
      <!-- Chart -->
-     <script>
-         var ctx = document.getElementById('myChart1');
-         var xValues = ['HTML','CSS','SASS','Javascript','php','ruby','iOS'];
-         var yValues = [30,30,10,20,10,5,5];
-         var barColor = ['#ff0000','#ff8c00','#ffff00','#008000','#0000ff','#4b0082','#800080'];
+        <script>
+          var ctx = document.getElementById('myChart1');
+          var xValues = ['HTML','CSS','SASS','Javascript','php','ruby','iOS'];
+          var yValues = [30,30,10,20,10,5,5];
+          var barColor = ['#ff0000','#ff8c00','#ffff00','#008000','#0000ff','#4b0082','#800080'];
      ...
   
 -----------------------------------------------------------------------
